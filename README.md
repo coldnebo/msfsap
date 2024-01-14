@@ -16,8 +16,19 @@ based on my MS store install: D:\games\msfs\Official
 ```
 cd github\msfsap
 
+
+# pull
+
 cp D:\games\msfs\Official\OneStore\workingtitle-instruments-garmin-gns\html_ui\Pages\VCockpit\Instruments\NavSystems\GPS\WT530\WT530B.js .
 
 cp D:\games\msfs\Official\OneStore\workingtitle-instruments-garmin-gns\html_ui\Pages\VCockpit\Instruments\NavSystems\GPS\WT430\WT430B.js .
+
+# push
+
+cp WT530B.js D:\games\msfs\Official\OneStore\workingtitle-instruments-garmin-gns\html_ui\Pages\VCockpit\Instruments\NavSystems\GPS\WT530\WT530B.js 
+
+cp WT430B.js D:\games\msfs\Official\OneStore\workingtitle-instruments-garmin-gns\html_ui\Pages\VCockpit\Instruments\NavSystems\GPS\WT430\WT430B.js
+
+
 
 ```
