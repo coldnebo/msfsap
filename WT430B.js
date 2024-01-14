@@ -22324,11 +22324,12 @@
          * Update loop for the main screen.
          */
         update() {
-            var _a;
+            var _a, _b;
             const isPrimaryInstrument = this.props.options.navIndex === 1;
             this.clock.onUpdate();
             this.props.backplane.onUpdate();
             if (isPrimaryInstrument) {
+                (_a = this.autopilot) === null || _a === void 0 ? void 0 : _a.update();
                 // Planner update
                 const now = Date.now();
                 if (now - this.lastCalculate > 3000) {
@@ -22338,11 +22339,12 @@
                 }
                 this.gpsSynchronizer.update();
             }
-            (_a = this.vnavController) === null || _a === void 0 ? void 0 : _a.update();
+            (_b = this.vnavController) === null || _b === void 0 ? void 0 : _b.update();
             if (this.currentPowerState === PowerState.On || this.currentPowerState === PowerState.OnSkipInit) {
                 this.gpsSatComputer.onUpdate();
             }
         }
+
         /**
          * Handles when an interaction event is received by the main screen.
          * @param evt The event that was received.
